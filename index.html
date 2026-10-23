@@ -1,0 +1,445 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Beauty Haven Store is an online makeup store bringing together different brands, with products and shades suitable for women of color.">
+  <title>Beauty Haven Store | Makeup That Sees You</title>
+  <link rel="stylesheet" href="index_style.css">
+</head>
+<body id="top">
+
+  <header id="site-header" class="site-header">
+    <div class="header-container">
+      <a id="site-logo" class="site-logo" href="index.html">
+        <img class="site-logo-image" src="c:\Users\User\Downloads\ChatGPT Image Oct 8, 2026, 11_24_00 AM.png" alt="Beauty Haven Store logo">
+        <span class="site-logo-text">Beauty Haven Store</span>
+      </a>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul class="main-nav-list">
+          <li class="main-nav-item"><a class="main-nav-link" href="index.html">Home</a></li>
+           <li class="main-nav-item"><a class="main-nav-link" href="products.html">Products</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="cart.html">Cart</a></li> 
+          <li class="main-nav-item"><a class="main-nav-link" href="#shade-finder">Shade Finder</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="#about">About</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div id="header-actions" class="header-actions">
+        <form id="search-form" class="search-form" action="search.html" method="get" role="search">
+          <label for="search-input" class="search-label">Search</label>
+          <input type="search" id="search-input" class="search-input" name="q" placeholder="Search makeup, brands, shades">
+          <button type="submit" id="search-button" class="search-button">Search</button>
+        </form>
+        <a id="wishlist-link" class="header-action-link" href="wishlist.html">Wishlist</a>
+        <a id="cart-link" class="header-action-link" href="cart.html">Cart <span id="cart-count" class="cart-count">0</span></a>
+        <a id="account-link" class="header-action-link" href="account.html">Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="main-content">
+
+    <!-- HERO -->
+    <section id="hero" class="hero" aria-labelledby="hero-heading">
+      <div class="hero-content">
+        <h1 id="hero-heading" class="hero-heading">MAKEUP THAT SEES YOU.</h1>
+        <p class="hero-description">Discover beauty products made for every shade of you.</p>
+        <div class="hero-actions">
+          <a id="hero-shop-now" class="button button-primary" href="shop.html">Shop Now</a>
+          <a id="hero-find-shade" class="button button-secondary" href="#shade-finder">Find My Shade</a>
+        </div>
+      </div>
+      <figure class="hero-media">
+        <img class="hero-image" src="c:\Users\User\Downloads\Black beauty.jpg" alt="Woman of color with a radiant, even complexion wearing soft pink lip color and blush">
+      </figure>
+    </section>
+
+    <!-- SHOP BY CATEGORY -->
+    <section id="categories" class="categories" aria-labelledby="categories-heading">
+      <h2 id="categories-heading" class="section-heading">Shop by Category</h2>
+      <ul class="category-list">
+        <li class="category-item">
+          <article class="category-card">
+            <a class="category-link" href="shop.html?category=foundation">
+              <img class="category-image" src="c:\Users\User\Downloads\Stylish foundation bottle.jpg" alt="Bottles of liquid foundation in a range of deep and rich shades">
+              <h3 class="category-name">Foundation</h3>
+            </a>
+          </article>
+        </li>
+        <li class="category-item">
+          <article class="category-card">
+            <a class="category-link" href="shop.html?category=concealer">
+              <img class="category-image" src="c:\Users\User\Downloads\E_l.f. 16hr Camo Concealer Full Coverage & Highly Pigmented Matte Finish 6ml" alt="Concealer wands and tubes in assorted skin tone shades">
+              <h3 class="category-name">Concealer</h3>
+            </a>
+          </article>
+        </li>
+        <li class="category-item">
+          <article class="category-card">
+            <a class="category-link" href="shop.html?category=primer">
+              <img class="category-image" src="c:\Users\User\Downloads\Makeup That Lasts All Day ✨ This Primer Is a Game Changer.jpg" alt="Face primer tube and bottle on a neutral background">
+              <h3 class="category-name">Primer</h3>
+            </a>
+          </article>
+        </li>
+        <li class="category-item">
+          <article class="category-card">
+            <a class="category-link" href="shop.html?category=powder">
+              <img class="category-image" src="c:\Users\User\Downloads\ART JUNGLE _ s w e d e n on Instagram_ “Dark Powder Contour Pallet 🤎 —————————— Pris_ 369 kr Fri frakt (Sverige) Finns att köpas här ➡️…”.jpg" alt="Open compact of setting powder with a fluffy brush">
+              <h3 class="category-name">Powder</h3>
+            </a>
+          </article>
+        </li>
+        <li class="category-item">
+          <article class="category-card">
+            <a class="category-link" href="shop.html?category=blush">
+              <img class="category-image" src="c:\Users\User\Downloads\download.jpg" alt="Pressed blush compact in a warm berry shade">
+              <h3 class="category-name">Blush</h3>
+            </a>
+          </article>
+        </li>
+        <li class="category-item">
+          <article class="category-card">
+            <a class="category-link" href="shop.html?category=lip">
+              <img class="category-image" src="c:\Users\User\Downloads\best shade.jpg" alt="Lipsticks and lip glosses in a variety of shades">
+              <h3 class="category-name">Lip</h3>
+            </a>
+          </article>
+        </li>
+        <li class="category-item">
+          <article class="category-card">
+            <a class="category-link" href="shop.html?category=eyes">
+              <img class="category-image" src="c:\Users\User\Downloads\E_l.f. 16hr Camo Concealer Full Coverage & Highly Pigmented Matte Finish 6ml" alt="Eyeshadow palette, eyeliner and mascara arranged together">
+              <h3 class="category-name">Eyes</h3>
+            </a>
+          </article>
+        </li>
+        <li class="category-item">
+          <article class="category-card">
+            <a class="category-link" href="shop.html?category=makeup-tools">
+              <img class="category-image" src="c:\Users\User\Downloads\Look at this Pink 12-Piece Brush.jpg" alt="Makeup brushes and sponges laid out in a row">
+              <h3 class="category-name">Makeup Tools</h3>
+            </a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- SHADE MATCH FINDER -->
+    <section id="shade-finder" class="shade-finder" aria-labelledby="shade-finder-heading">
+      <header class="section-header">
+        <h2 id="shade-finder-heading" class="section-heading">Find Your Perfect Shade</h2>
+        <p class="section-description">Not sure what shade is right for you? Find suitable foundation and concealer shades from different brands.</p>
+      </header>
+
+      <form id="shade-finder-form" class="shade-finder-form" action="#" method="get">
+        <div class="form-group">
+          <label for="skin-tone" class="form-label">Skin Tone</label>
+          <select id="skin-tone" name="skin-tone" class="form-select">
+            <option value="">Select your skin tone</option>
+            <option value="fair">Fair</option>
+            <option value="light">Light</option>
+            <option value="medium">Medium</option>
+            <option value="tan">Tan</option>
+            <option value="deep">Deep</option>
+            <option value="dark">Dark</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="undertone" class="form-label">Undertone</label>
+          <select id="undertone" name="undertone" class="form-select">
+            <option value="">Select your undertone</option>
+            <option value="cool">Cool</option>
+            <option value="warm">Warm</option>
+            <option value="neutral">Neutral</option>
+            <option value="olive">Olive</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="existing-brand" class="form-label">Existing Foundation Brand</label>
+          <select id="existing-brand" name="existing-brand" class="form-select">
+            <option value="">Select a brand</option>
+            <option value="mac-cosmetics">MAC Cosmetics</option>
+            <option value="fenty-beauty">Fenty Beauty</option>
+            <option value="nars">NARS</option>
+            <option value="maybelline">Maybelline</option>
+            <option value="estee-lauder">Estée Lauder</option>
+            <option value="nyx">NYX</option>
+            <option value="none">None</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="existing-shade" class="form-label">Existing Foundation Shade</label>
+          <input type="text" id="existing-shade" name="existing-shade" class="form-input" placeholder="e.g. NC42, 330, Deep">
+        </div>
+
+        <button type="submit" id="find-shade-button" class="button button-primary">Find My Shade</button>
+      </form>
+
+      <div id="shade-results" class="shade-results" aria-live="polite"></div>
+    </section>
+
+    <!-- FEATURED BRANDS -->
+    <section id="featured-brands" class="featured-brands" aria-labelledby="brands-heading">
+      <h2 id="brands-heading" class="section-heading">Featured Brands</h2>
+      <ul class="brand-list">
+        <li class="brand-item">
+          <article class="brand-card">
+            <a class="brand-link" href="brands.html?brand=mac-cosmetics">
+              <img class="brand-image" src="c:\Users\User\Downloads\download (2).jpg" alt="MAC Cosmetics logo">
+              <h3 class="brand-name">MAC Cosmetics</h3>
+            </a>
+          </article>
+        </li>
+        <li class="brand-item">
+          <article class="brand-card">
+            <a class="brand-link" href="brands.html?brand=fenty-beauty">
+              <img class="brand-image" src="c:\Users\User\Downloads\download (1).jpg" alt="Fenty Beauty logo">
+              <h3 class="brand-name">Fenty Beauty</h3>
+            </a>
+          </article>
+        </li>
+        <li class="brand-item">
+          <article class="brand-card">
+            <a class="brand-link" href="brands.html?brand=nars">
+              <img class="brand-image" src="c:\Users\User\Downloads\Nars Logo Reverse_.jpg" alt="NARS logo">
+              <h3 class="brand-name">NARS</h3>
+            </a>
+          </article>
+        </li>
+        <li class="brand-item">
+          <article class="brand-card">
+            <a class="brand-link" href="brands.html?brand=maybelline">
+              <img class="brand-image" src="c:\Users\User\Downloads\BRAND ELEMENTS_ This is Maybelline's brand logo_.jpg" alt="Maybelline logo">
+              <h3 class="brand-name">Maybelline</h3>
+            </a>
+          </article>
+        </li>
+        <li class="brand-item">
+          <article class="brand-card">
+            <a class="brand-link" href="brands.html?brand=estee-lauder">
+              <img class="brand-image" src="c:\Users\User\Downloads\Estée Lauder Logo.jpg" alt="Estée Lauder logo">
+              <h3 class="brand-name">Estée Lauder</h3>
+            </a>
+          </article>
+        </li>
+        <li class="brand-item">
+          <article class="brand-card">
+            <a class="brand-link" href="brands.html?brand=nyx">
+              <img class="brand-image" src="c:\Users\User\Downloads\NYX Logo.jpg" alt="NYX logo">
+              <h3 class="brand-name">NYX</h3>
+            </a>
+          </article>
+        </li>
+      </ul>
+    </section>
+
+    <!-- BEST SELLERS -->
+    <section id="best-sellers" class="best-sellers" aria-labelledby="best-sellers-heading">
+      <h2 id="best-sellers-heading" class="section-heading">Best Sellers</h2>
+      <div class="product-grid">
+
+        <article id="product-mac-conceal-correct" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\E_l.f. 16hr Camo Concealer Full Coverage & Highly Pigmented Matte Finish 6ml" alt="MAC Studio Fix Conceal and Correct Palette with multiple concealer and corrector shades">
+          <div class="product-info">
+            <p class="product-brand">MAC Cosmetics</p>
+            <h3 class="product-name">MAC Studio Fix Conceal and Correct Palette</h3>
+            <p class="product-description">A versatile palette of concealing and color-correcting shades for even, natural-looking coverage.</p>
+            <p class="product-price">₦70,000</p>
+            <p class="product-shade">Available shade: <span class="product-shade-value">Deep</span></p>
+            <p class="product-rating" aria-label="Rated 4.8 out of 5 stars">★★★★★ <span class="product-rating-value">4.8</span></p>
+            <a class="product-link" href="product.html?id=mac-studio-fix-conceal-correct-palette">View Product</a>
+            <div class="product-actions">
+              <button type="button" class="button button-primary add-to-cart-button" data-product-id="mac-studio-fix-conceal-correct-palette">Add to Cart</button>
+              <button type="button" class="button button-secondary add-to-wishlist-button" data-product-id="mac-studio-fix-conceal-correct-palette">Add to Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article id="product-mac-power-grip-primer" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\Makeup That Lasts All Day ✨ This Primer Is a Game Changer.jpg" alt="MAC Power Grip Primer tube">
+          <div class="product-info">
+            <p class="product-brand">MAC Cosmetics</p>
+            <h3 class="product-name">MAC Power Grip Primer</h3>
+            <p class="product-description">A gripping, gel-based primer that helps makeup stay in place and look smooth all day.</p>
+            <p class="product-price">₦3,750</p>
+            <p class="product-shade">Available shade: <span class="product-shade-value">Clear</span></p>
+            <p class="product-rating" aria-label="Rated 4.7 out of 5 stars">★★★★★ <span class="product-rating-value">4.7</span></p>
+            <a class="product-link" href="product.html?id=mac-power-grip-primer">View Product</a>
+            <div class="product-actions">
+              <button type="button" class="button button-primary add-to-cart-button" data-product-id="mac-power-grip-primer">Add to Cart</button>
+              <button type="button" class="button button-secondary add-to-wishlist-button" data-product-id="mac-power-grip-primer">Add to Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article id="product-beauty-blender" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\Illumina beauty blenders are the best😍 10pcs- Beauty Blenders✨ Material_ hydrophilic non-latex Size_ 60 _ 42mm Color_ yellow, purple, red, gray, pink, Blue, burgundy, skin color, etc_ (can be customized) Advantages.jpg" alt="Pink Beauty Blender makeup sponge">
+          <div class="product-info">
+            <p class="product-brand">Beauty Blender</p>
+            <h3 class="product-name">Beauty Blender</h3>
+            <p class="product-description">A soft, bouncy sponge for blending foundation and concealer for a seamless finish.</p>
+            <p class="product-price">₦3,750</p>
+            <p class="product-shade">Available colour: <span class="product-shade-value">Pink</span></p>
+            <p class="product-rating" aria-label="Rated 4.9 out of 5 stars">★★★★★ <span class="product-rating-value">4.9</span></p>
+            <a class="product-link" href="product.html?id=beauty-blender">View Product</a>
+            <div class="product-actions">
+              <button type="button" class="button button-primary add-to-cart-button" data-product-id="beauty-blender">Add to Cart</button>
+              <button type="button" class="button button-secondary add-to-wishlist-button" data-product-id="beauty-blender">Add to Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article id="product-foundation" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\Stylish foundation bottle.jpg" alt="Bottle of liquid foundation with a swatch of deep skin tone shade">
+          <div class="product-info">
+            <p class="product-brand">Fenty Beauty</p>
+            <h3 class="product-name">Foundation</h3>
+            <p class="product-description">A long-wear liquid foundation available in an inclusive range of shades and undertones.</p>
+            <p class="product-price">₦0</p>
+            <p class="product-shade">Available shade: <span class="product-shade-value">Deep Warm</span></p>
+            <p class="product-rating" aria-label="Rated 4.8 out of 5 stars">★★★★★ <span class="product-rating-value">4.8</span></p>
+            <a class="product-link" href="product.html?id=foundation">View Product</a>
+            <div class="product-actions">
+              <button type="button" class="button button-primary add-to-cart-button" data-product-id="foundation">Add to Cart</button>
+              <button type="button" class="button button-secondary add-to-wishlist-button" data-product-id="foundation">Add to Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article id="product-concealer" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\download.jpg" alt="Concealer tube with a swatch of tan skin tone shade">
+          <div class="product-info">
+            <p class="product-brand">NARS</p>
+            <h3 class="product-name">Concealer</h3>
+            <p class="product-description">A creamy, full-coverage concealer that brightens and covers dark circles and blemishes.</p>
+            <p class="product-price">₦0</p>
+            <p class="product-shade">Available shade: <span class="product-shade-value">Tan Neutral</span></p>
+            <p class="product-rating" aria-label="Rated 4.7 out of 5 stars">★★★★★ <span class="product-rating-value">4.7</span></p>
+            <a class="product-link" href="product.html?id=concealer">View Product</a>
+            <div class="product-actions">
+              <button type="button" class="button button-primary add-to-cart-button" data-product-id="concealer">Add to Cart</button>
+              <button type="button" class="button button-secondary add-to-wishlist-button" data-product-id="concealer">Add to Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+        <article id="product-lip-gloss" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\best shade.jpg" alt="Glossy lip gloss wand in a warm rose shade">
+          <div class="product-info">
+            <p class="product-brand">NYX</p>
+            <h3 class="product-name">Lip Gloss</h3>
+            <p class="product-description">A high-shine, non-sticky lip gloss that adds a glossy finish in flattering shades.</p>
+            <p class="product-price">₦0</p>
+            <p class="product-shade">Available colour: <span class="product-shade-value">Rose</span></p>
+            <p class="product-rating" aria-label="Rated 4.6 out of 5 stars">★★★★★ <span class="product-rating-value">4.6</span></p>
+            <a class="product-link" href="product.html?id=lip-gloss">View Product</a>
+            <div class="product-actions">
+              <button type="button" class="button button-primary add-to-cart-button" data-product-id="lip-gloss">Add to Cart</button>
+              <button type="button" class="button button-secondary add-to-wishlist-button" data-product-id="lip-gloss">Add to Wishlist</button>
+            </div>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+    <!-- SPECIAL OFFER -->
+    <section id="special-offer" class="special-offer" aria-labelledby="special-offer-heading">
+      <h2 id="special-offer-heading" class="special-offer-heading">FREE DELIVERY ON ORDERS OVER ₦70,000</h2>
+      <a id="offer-shop-now" class="button button-primary" href="shop.html">Shop Now</a>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <div class="about-content">
+        <h2 id="about-heading" class="section-heading">About Beauty Haven Store</h2>
+        <p class="about-text">Beauty Haven Store makes it easier for women of color to discover, compare and purchase makeup products from different brands in one place.</p>
+        <p class="about-text">From foundations and concealers in a wide range of shades to the tools that bring a look together, we bring the brands you love under one roof so you can shop with confidence.</p>
+        <a id="about-link" class="button button-secondary" href="about.html">Learn More</a>
+      </div>
+      <figure class="about-media">
+        <img class="about-image" src="c:\Users\User\Downloads\download (3).jpg" alt="Women of different skin tones smiling and showing their makeup">
+      </figure>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact" class="contact" aria-labelledby="contact-heading">
+      <h2 id="contact-heading" class="section-heading">Contact Us</h2>
+      <div class="contact-container">
+        <address id="contact-details" class="contact-details">
+          <p class="contact-item">Email: <a id="contact-email" href="mailto:hello@beautyhavenstore.com">hello@beautyhavenstore.com</a></p>
+          <p class="contact-item">Phone: <a id="contact-phone" href="tel:+2340000000000">+234 000 000 0000</a></p>
+        </address>
+
+        <form id="contact-form" class="contact-form" action="#" method="post">
+          <div class="form-group">
+            <label for="contact-name" class="form-label">Name</label>
+            <input type="text" id="contact-name" name="name" class="form-input" autocomplete="name" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-email-input" class="form-label">Email</label>
+            <input type="email" id="contact-email-input" name="email" class="form-input" autocomplete="email" required>
+          </div>
+          <div class="form-group">
+            <label for="contact-message" class="form-label">Message</label>
+            <textarea id="contact-message" name="message" class="form-textarea" rows="6" required></textarea>
+          </div>
+          <button type="submit" id="contact-submit" class="button button-primary">Submit</button>
+        </form>
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-container">
+      <section class="footer-brand" aria-labelledby="footer-brand-heading">
+        <h2 id="footer-brand-heading" class="footer-brand-name">Beauty Haven Store</h2>
+        <p class="footer-brand-text">Makeup that sees you.</p>
+      </section>
+
+      <nav id="footer-quick-links" class="footer-nav" aria-labelledby="quick-links-heading">
+        <h3 id="quick-links-heading" class="footer-heading">Quick Links</h3>
+        <ul class="footer-list">
+          <li class="footer-item"><a class="footer-link" href="shop.html">Shop</a></li>
+          <li class="footer-item"><a class="footer-link" href="#shade-finder">Shade Finder</a></li>
+          <li class="footer-item"><a class="footer-link" href="#about">About</a></li>
+          <li class="footer-item"><a class="footer-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav id="footer-help" class="footer-nav" aria-labelledby="help-heading">
+        <h3 id="help-heading" class="footer-heading">Help</h3>
+        <ul class="footer-list">
+          <li class="footer-item"><a class="footer-link" href="faqs.html">FAQs</a></li>
+          <li class="footer-item"><a class="footer-link" href="delivery-information.html">Delivery Information</a></li>
+          <li class="footer-item"><a class="footer-link" href="returns.html">Returns</a></li>
+          <li class="footer-item"><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></li>
+          <li class="footer-item"><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></li>
+        </ul>
+      </nav>
+
+      <nav id="footer-social" class="footer-nav" aria-labelledby="social-heading">
+        <h3 id="social-heading" class="footer-heading">Follow Us</h3>
+        <ul class="footer-list">
+          <li class="footer-item"><a class="footer-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li class="footer-item"><a class="footer-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li class="footer-item"><a class="footer-link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <p id="copyright" class="footer-copyright">© 2026 Beauty Haven Store. All rights reserved.</p>
+  </footer>
+ <script src="script.js"></script>
+
+</body>
+</html>
+```2

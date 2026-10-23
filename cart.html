@@ -1,0 +1,265 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Review the items in your Beauty Haven Store shopping cart.">
+  <title>Your Shopping Cart | Beauty Haven Store</title>
+  <link rel="stylesheet" href="cart_style.css">
+</head>
+<body id="top">
+
+
+  <header id="site-header" class="site-header">
+    <div class="header-container">
+      <a id="site-logo" class="site-logo" href="index.html">
+        <img class="site-logo-image" src="c:\Users\User\Downloads\ChatGPT Image Oct 8, 2026, 11_24_00 AM.png" alt="Beauty Haven Store logo">
+        <span class="site-logo-text">Beauty Haven Store</span>
+      </a>
+
+      <nav id="main-nav" class="main-nav" aria-label="Main navigation">
+        <ul class="main-nav-list">
+          <li class="main-nav-item"><a class="main-nav-link" href="index.html">Home</a></li>
+           <li class="main-nav-item"><a class="main-nav-link" href="products.html">Products</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="cart.html">Cart</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="index.html#shade-finder">Shade Finder</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="index.html#about">About</a></li>
+          <li class="main-nav-item"><a class="main-nav-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div id="header-actions" class="header-actions">
+        <form id="search-form" class="search-form" action="search.html" method="get" role="search">
+          <label for="search-input" class="search-label">Search</label>
+          <input type="search" id="search-input" class="search-input" name="q" placeholder="Search makeup, brands, shades">
+          <button type="submit" id="search-button" class="search-button">Search</button>
+        </form>
+        <a id="wishlist-link" class="header-action-link" href="wishlist.html">Wishlist</a>
+        <a id="cart-link" class="header-action-link" href="cart.html" aria-current="page">Cart <span id="cart-count" class="cart-count">5</span></a>
+        <a id="account-link" class="header-action-link" href="account.html">Account</a>
+      </div>
+    </div>
+  </header>
+
+  <main id="main-content" class="main-content">
+
+    <!-- BREADCRUMB -->
+    <nav id="breadcrumb" class="breadcrumb" aria-label="Breadcrumb">
+      <ol class="breadcrumb-list">
+        <li class="breadcrumb-item"><a class="breadcrumb-link" href="index.html">Home</a></li>
+        <li class="breadcrumb-item" aria-current="page">Cart</li>
+      </ol>
+    </nav>
+
+    <!-- PAGE TITLE -->
+    <h1 id="cart-page-title" class="page-title">Your Shopping Cart</h1>
+
+    <div id="cart-layout" class="cart-layout">
+
+      <!-- CART ITEMS -->
+      <section id="cart-items" class="cart-items" aria-labelledby="cart-items-heading">
+        <h2 id="cart-items-heading" class="cart-items-heading">Cart Items</h2>
+
+        <ul id="cart-items-list" class="cart-items-list">
+
+          <!-- Product 1 -->
+          <li class="cart-item-wrapper">
+            <article id="cart-item-1" class="cart-item" data-product-id="mac-studio-fix-conceal-correct-palette" data-unit-price="70000">
+              <img class="cart-item-image" src="c:\Users\User\Downloads\pretty girl.png" alt="MAC Studio Fix Conceal and Correct Palette">
+              <div class="cart-item-details">
+                <p class="cart-item-brand">MAC Cosmetics</p>
+                <h3 class="cart-item-name"><a class="cart-item-link" href="product.html?id=mac-studio-fix-conceal-correct-palette">MAC Studio Fix Conceal and Correct Palette</a></h3>
+                <p class="cart-item-shade">Shade: <span class="cart-item-shade-value">Dark</span></p>
+                <p class="cart-item-price">Price: <span class="cart-item-price-value">₦70,000</span></p>
+              </div>
+              <div class="cart-item-quantity quantity-selector">
+                <button type="button" class="quantity-button quantity-decrease" data-action="decrease" aria-label="Decrease quantity of MAC Studio Fix Conceal and Correct Palette">−</button>
+                <label for="quantity-1" class="quantity-label">Quantity</label>
+                <input type="number" id="quantity-1" class="quantity-input" name="quantity-1" value="1" min="1" max="10">
+                <button type="button" class="quantity-button quantity-increase" data-action="increase" aria-label="Increase quantity of MAC Studio Fix Conceal and Correct Palette">+</button>
+              </div>
+              <p class="cart-item-total">Item total: <span class="cart-item-total-value">₦70,000</span></p>
+              <button type="button" class="button button-secondary remove-item-button" data-action="remove" aria-label="Remove MAC Studio Fix Conceal and Correct Palette from cart">Remove</button>
+            </article>
+          </li>
+
+          <!-- Product 2 -->
+          <li class="cart-item-wrapper">
+            <article id="cart-item-2" class="cart-item" data-product-id="mac-power-grip-primer" data-unit-price="3750">
+              <img class="cart-item-image" src="c:\Users\User\Downloads\Makeup That Lasts All Day ✨ This Primer Is a Game Changer.jpg" alt="MAC Power Grip Primer tube">
+              <div class="cart-item-details">
+                <p class="cart-item-brand">MAC Cosmetics</p>
+                <h3 class="cart-item-name"><a class="cart-item-link" href="product.html?id=mac-power-grip-primer">MAC Power Grip Primer</a></h3>
+                <p class="cart-item-shade">Shade: <span class="cart-item-shade-value">Clear</span></p>
+                <p class="cart-item-price">Price: <span class="cart-item-price-value">₦3,750</span></p>
+              </div>
+              <div class="cart-item-quantity quantity-selector">
+                <button type="button" class="quantity-button quantity-decrease" data-action="decrease" aria-label="Decrease quantity of MAC Power Grip Primer">−</button>
+                <label for="quantity-2" class="quantity-label">Quantity</label>
+                <input type="number" id="quantity-2" class="quantity-input" name="quantity-2" value="2" min="1" max="10">
+                <button type="button" class="quantity-button quantity-increase" data-action="increase" aria-label="Increase quantity of MAC Power Grip Primer">+</button>
+              </div>
+              <p class="cart-item-total">Item total: <span class="cart-item-total-value">₦7,500</span></p>
+              <button type="button" class="button button-secondary remove-item-button" data-action="remove" aria-label="Remove MAC Power Grip Primer from cart">Remove</button>
+            </article>
+          </li>
+
+          <!-- Product 3 -->
+          <li class="cart-item-wrapper">
+            <article id="cart-item-3" class="cart-item" data-product-id="beauty-blender" data-unit-price="3750">
+              <img class="cart-item-image" src="c:\Users\User\Downloads\Illumina beauty blenders are the best😍 10pcs- Beauty Blenders✨ Material_ hydrophilic non-latex Size_ 60 _ 42mm Color_ yellow, purple, red, gray, pink, Blue, burgundy, skin color, etc_ (can be customized) Advant (1).jpg" alt="Pink Beauty Blender makeup sponge">
+              <div class="cart-item-details">
+                <p class="cart-item-brand">Beauty Blender</p>
+                <h3 class="cart-item-name"><a class="cart-item-link" href="product.html?id=beauty-blender">Beauty Blender</a></h3>
+                <p class="cart-item-shade">Colour: <span class="cart-item-shade-value">Pink</span></p>
+                <p class="cart-item-price">Price: <span class="cart-item-price-value">₦3,750</span></p>
+              </div>
+              <div class="cart-item-quantity quantity-selector">
+                <button type="button" class="quantity-button quantity-decrease" data-action="decrease" aria-label="Decrease quantity of Beauty Blender">−</button>
+                <label for="quantity-3" class="quantity-label">Quantity</label>
+                <input type="number" id="quantity-3" class="quantity-input" name="quantity-3" value="2" min="1" max="10">
+                <button type="button" class="quantity-button quantity-increase" data-action="increase" aria-label="Increase quantity of Beauty Blender">+</button>
+              </div>
+              <p class="cart-item-total">Item total: <span class="cart-item-total-value">₦7,500</span></p>
+              <button type="button" class="button button-secondary remove-item-button" data-action="remove" aria-label="Remove Beauty Blender from cart">Remove</button>
+            </article>
+          </li>
+
+        </ul>
+
+        <p id="empty-cart-message" class="empty-cart-message" hidden>Your cart is empty.</p>
+
+        <a id="continue-shopping-link" class="continue-shopping-link" href="index.html">Continue Shopping</a>
+      </section>
+
+      <aside id="cart-sidebar" class="cart-sidebar" aria-label="Order information">
+
+        <!-- FREE DELIVERY MESSAGE -->
+        <section id="free-delivery" class="free-delivery" aria-labelledby="free-delivery-heading">
+          <h2 id="free-delivery-heading" class="free-delivery-heading">Delivery</h2>
+          <p id="free-delivery-threshold" class="free-delivery-threshold">Free delivery on orders over ₦70,000</p>
+          <p id="free-delivery-status" class="free-delivery-status free-delivery-unlocked" aria-live="polite">You've unlocked free delivery!</p>
+          <p id="free-delivery-remaining" class="free-delivery-remaining" hidden>Add <span id="free-delivery-remaining-amount" class="free-delivery-remaining-amount">₦0</span> more to unlock free delivery.</p>
+          <progress id="free-delivery-progress" class="free-delivery-progress" value="85000" max="70000">100%</progress>
+        </section>
+
+        <!-- ORDER SUMMARY -->
+        <section id="order-summary" class="order-summary" aria-labelledby="order-summary-heading">
+          <h2 id="order-summary-heading" class="order-summary-heading">Order Summary</h2>
+          <dl class="order-summary-list">
+            <div class="order-summary-row" id="summary-subtotal-row">
+              <dt class="order-summary-label">Subtotal</dt>
+              <dd id="summary-subtotal" class="order-summary-value">₦85,000</dd>
+            </div>
+            <div class="order-summary-row" id="summary-delivery-row">
+              <dt class="order-summary-label">Delivery Fee</dt>
+              <dd id="summary-delivery-fee" class="order-summary-value">₦0</dd>
+            </div>
+            <div class="order-summary-row order-summary-total-row" id="summary-total-row">
+              <dt class="order-summary-label">Total</dt>
+              <dd id="summary-total" class="order-summary-value">₦85,000</dd>
+            </div>
+          </dl>
+          <a id="checkout-button" class="button button-primary checkout-button" href="checkout.html">PROCEED TO CHECKOUT</a>
+        </section>
+
+      </aside>
+    </div>
+
+    <!-- RECOMMENDED PRODUCTS -->
+    <section id="recommended-products" class="recommended-products" aria-labelledby="recommended-products-heading">
+      <h2 id="recommended-products-heading" class="section-heading">You May Also Like</h2>
+      <div class="product-grid">
+
+        <article id="recommended-foundation" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\Stylish foundation bottle.jpg" alt="Bottle of liquid foundation with a swatch of deep skin tone shade">
+          <div class="product-info">
+            <h3 class="product-name">Foundation</h3>
+            <p class="product-price">₦0</p>
+            <a class="product-link" href="product.html?id=foundation">View Product</a>
+            <button type="button" class="button button-primary add-to-cart-button" data-product-id="foundation">Add to Cart</button>
+          </div>
+        </article>
+
+        <article id="recommended-concealer" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\E_l.f. 16hr Camo Concealer Full Coverage & Highly Pigmented Matte Finish 6ml" alt="Concealer tube with a swatch of tan skin tone shade">
+          <div class="product-info">
+            <h3 class="product-name">Concealer</h3>
+            <p class="product-price">₦0</p>
+            <a class="product-link" href="product.html?id=concealer">View Product</a>
+            <button type="button" class="button button-primary add-to-cart-button" data-product-id="concealer">Add to Cart</button>
+          </div>
+        </article>
+
+        <article id="recommended-lip-gloss" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\best shade.jpg" alt="Glossy lip gloss wand in a warm rose shade">
+          <div class="product-info">
+            <h3 class="product-name">Lip Gloss</h3>
+            <p class="product-price">₦0</p>
+            <a class="product-link" href="product.html?id=lip-gloss">View Product</a>
+            <button type="button" class="button button-primary add-to-cart-button" data-product-id="lip-gloss">Add to Cart</button>
+          </div>
+        </article>
+
+        <article id="recommended-blush" class="product-card">
+          <img class="product-image" src="c:\Users\User\Downloads\download.jpg" alt="Pressed blush compact in a warm berry shade">
+          <div class="product-info">
+            <h3 class="product-name">Blush</h3>
+            <p class="product-price">₦0</p>
+            <a class="product-link" href="product.html?id=blush">View Product</a>
+            <button type="button" class="button button-primary add-to-cart-button" data-product-id="blush">Add to Cart</button>
+          </div>
+        </article>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer id="site-footer" class="site-footer">
+    <div class="footer-container">
+      <section class="footer-brand" aria-labelledby="footer-brand-heading">
+        <h2 id="footer-brand-heading" class="footer-brand-name">Beauty Haven Store</h2>
+        <p class="footer-brand-text">Makeup that sees you.</p>
+      </section>
+
+      <nav id="footer-quick-links" class="footer-nav" aria-labelledby="quick-links-heading">
+        <h3 id="quick-links-heading" class="footer-heading">Quick Links</h3>
+        <ul class="footer-list">
+          <li class="footer-item"><a class="footer-link" href="shop.html">Shop</a></li>
+          <li class="footer-item"><a class="footer-link" href="brands.html">Brands</a></li>
+          <li class="footer-item"><a class="footer-link" href="index.html#shade-finder">Shade Finder</a></li>
+          <li class="footer-item"><a class="footer-link" href="index.html#about">About</a></li>
+          <li class="footer-item"><a class="footer-link" href="index.html#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav id="footer-help" class="footer-nav" aria-labelledby="help-heading">
+        <h3 id="help-heading" class="footer-heading">Help</h3>
+        <ul class="footer-list">
+          <li class="footer-item"><a class="footer-link" href="faqs.html">FAQs</a></li>
+          <li class="footer-item"><a class="footer-link" href="delivery-information.html">Delivery Information</a></li>
+          <li class="footer-item"><a class="footer-link" href="returns.html">Returns</a></li>
+          <li class="footer-item"><a class="footer-link" href="privacy-policy.html">Privacy Policy</a></li>
+          <li class="footer-item"><a class="footer-link" href="terms-and-conditions.html">Terms and Conditions</a></li>
+        </ul>
+      </nav>
+
+      <nav id="footer-social" class="footer-nav" aria-labelledby="social-heading">
+        <h3 id="social-heading" class="footer-heading">Follow Us</h3>
+        <ul class="footer-list">
+          <li class="footer-item"><a class="footer-link" href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram</a></li>
+          <li class="footer-item"><a class="footer-link" href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook</a></li>
+          <li class="footer-item"><a class="footer-link" href="https://www.tiktok.com/" target="_blank" rel="noopener noreferrer">TikTok</a></li>
+        </ul>
+      </nav>
+    </div>
+
+    <p id="copyright" class="footer-copyright">© 2026 Beauty Haven Store. All rights reserved.</p>
+  </footer>
+ <script src="script.js"></script>
+
+</body>
+</html>
+```
